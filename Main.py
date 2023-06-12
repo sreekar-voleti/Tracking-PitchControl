@@ -49,6 +49,7 @@ fig,ax = vis.plot_pitch( field_color='white', field_dimen = field_dimen)
 vis.plot_frame( data_home.loc[frame], data_away.loc[frame] , figax=(fig,ax) , PlayerAlpha=0.5, include_player_velocities=include_player_velocities, annotate=True)
 cmap = 'seismic'
 ax.imshow( np.flipud(PPCFa) , extent=(-field_dimen[0]/2., field_dimen[0]/2., -field_dimen[1]/2., field_dimen[1]/2.) ,cmap=cmap,alpha=0.5 )
+plt.tight_layout()
 plt.savefig("Figures/PitchControlExample.png")
 if show == True:
     plt.show()

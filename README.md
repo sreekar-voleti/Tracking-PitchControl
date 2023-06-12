@@ -31,7 +31,11 @@ pip3 install itertools
 
 3. ```frame```: Which frame the user wants to look at. 
 
+4. ```field_dimen```: Dimension of the field in yards. Default is ```(106,68)```.
+
 4. ```include_player_velocities```: Set to ```True``` to show the player velocities in the plot. 
+
+5. n_x_grid_cells: How many points along the length of the pitch to have in the grid. The corresponding number in the width dimension is determined by the ratio of dimensions in ```field_dimen```.
 
 5. ```show```: Set to ```True``` to show the plot. In all cases, the plot will be saved in the ```Figures/``` directory. 
 
